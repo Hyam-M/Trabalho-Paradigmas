@@ -1,13 +1,8 @@
 public interface Entidade {
-    /*protected int atk;
-    protected int def;
-    
-    talvez tenha como fazer uma struct com os dois abaixo
-    protected int posX; 
-    protected int posY;
-     */
-
-    //public abstract void atacar(argumentos);
+    //interfaces nn podem ter atributos e nem construtores
+    public abstract void atacar(Inimigo oponente);
+    public abstract void atacar(JogadorSimples p1);
+    public abstract void atacar(JogadorSuporte p2);
     //nn eh pra definir msm, como eh uma interface nn pode ser definido
 
 }

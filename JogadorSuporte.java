@@ -1,22 +1,16 @@
-public class JogadorSuporte extends JogadorSimples {
-    /*
+public class JogadorSuporte extends Jogador{
     public JogadorSuporte(){};
-    public JogadorSuporte(argumentos){
+    public JogadorSuporte(int atk, int def, boolean vivo, int linha, int coluna){ //atk e def serao aleatorios, quando for inicializar o jogSuporte deve 
+    //passar um valor random em atk e def
+        super(atk, def, vivo, linha, coluna);
     }
 
-    aq tenho uma duvida, posso mandar como int def msm e ele vai atualizar o valor de def ou devo fazer
-    com que tenha duas funcoes restaurar e q cada uma recebe jogadorsimples ou jogadorsuporte? tipo,
-    se eu mandar def, atualiza def? lembro dela falar q os parametros sao por valor, ent como atualizar?
-    public void restaurar(int def){
+    public void restaurar(JogadorSimples p1, int aumentoDef){
+        p1.def += aumentoDef;
     }
-    
-    talvez se eu fizer algo assim
-    public void restaurar(jogadorsimples p1, int def){}
-    public void restaurar(jogadorsuporte p2, int def){}
-    atualizaria a def, somando +1, e faria p2.def = def
-    funcionaria?
+    public void restaurar(int aumentoDef){
+        this.def += aumentoDef;
+    }
+    //jogadorsup deve possuir atk menor q o jogsimples, criar funcao para verificar isso
 
-
-    */
-    
 }
